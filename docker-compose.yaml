@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  nginx:
+    container_name: project1b-nginx
+    image: nginx:1.13
+    build:
+      context:  ./nginx
+      dockerfile: Dockerfile
+    ports:
+      - 80:80
+    links:
+      - app
+    depends_on:
+      - app
+  app:
+    image: springio/gs-spring-boot
+    ports:
+      - "8080"
