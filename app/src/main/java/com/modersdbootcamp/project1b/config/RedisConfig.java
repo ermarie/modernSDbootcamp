@@ -1,4 +1,5 @@
-package package_name;
+package com.modersdbootcamp.project1b.config;
+
 import org.springframework.context.annotation.Configuration;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;

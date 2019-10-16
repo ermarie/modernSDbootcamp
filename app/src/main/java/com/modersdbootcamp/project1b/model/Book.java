@@ -1,6 +1,9 @@
 package com.modersdbootcamp.project1b.model;
 
-public class Book {
+import java.io.Serializable;
+
+public class Book implements Serializable {
+
 
     private String title;
     private long isbn;
